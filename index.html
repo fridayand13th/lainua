@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Cần óc chó</title>
+    <link rel="stylesheet" href="cs.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nut1" class="te marg" onclick="monut2()">
+            <span>Click here!</span>
+        </div>
+        <div id="nut2" class="te marg" onclick="monut3()">
+            <span>Click here!</span>
+        </div>
+        <div id="nut3" class="te marg" onclick="mosidecontent()">
+            <span>Click here!</span>
+        </div>
+        <div id="sidecontent">
+            <div id="modau1" class="te">
+                <h1>Có mỗi cái nút mà bấm mãi mới được.<br>
+                 Bấm lại đi xem nào!</h1>
+            </div>
+            <div id="nut4" class="te" onclick="momaincontent()">
+                <span>Click here!</span>
+            </div>
+            <div id="maincontent">
+                
+                <div class="ten t1">
+                    <h1>CẦN</h1>
+                </div>
+                <div class="avatar">
+                    <img src="./picturess/can2.JPG" alt="" class="anhcv">
+                </div>
+                <div class="ten t2">
+                    <h1>TRÔ</h1>
+                </div>
+                <div class="chucmung">
+                    <p>Chúc mừng em Cần đã tròn 20 tuổi!<br>
+                    Chúc em Cần có nhiều niềm vui khi chui hang cùng Tliệt.<br>À,nếu kiếm được nhiều tiền thì thi thoảng bao em Mạnh đi ăn.</p>
+                </div>
+                <div class="phaohoa">
+                    <img src="./picturess/phao1.gif" alt="" class="phao">
+                </div>
+                <div class="meoo">
+                    <img src="./picturess/meo1.gif" alt="" class="me">
+                </div>
+                <div id="nutdong" onclick="dong()">
+                    <span>X</span>
+                </div>
+            </div>
+        </div>
+        <div id="warn">
+        <img src="./picturess/fat2.gif" alt="" class="vovan1">
+        <h1 class="talkshit">Nếu được thì hãy mở đường link này bằng máy tính.<br>Còn không thì bấm vào nút bên dưới!!</h1>
+        <div id="cainut" onclick="closewarning()">
+            <span>ĐÂY LÀ CÁI NÚT!</span>
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    function monut2() {
+      document.getElementById("nut2").style.display = "flex";
+      document.getElementById("nut1").style.display = "none";
+    }
+</script>
+<script>   
+    function monut3(){
+        document.getElementById("nut3").style.display = "flex";
+        document.getElementById("nut2").style.display = "none";
+    }
+    function mosidecontent(){
+      document.getElementById("nut3").style.display = "none";
+      document.getElementById("sidecontent").style.display = "flex";
+    }
+    function dong(){
+        document.getElementById("nut1").style.display = "inline-flex";
+        document.getElementById("sidecontent").style.display = "none";
+        document.getElementById("maincontent").style.display = "none";
+        document.getElementById("modau1").style.display ="flex";
+    }
+    function momaincontent(){
+      
+      document.getElementById("maincontent").style.display = "flex";
+      document.getElementById("modau1").style.display ="none";
+    }
+    function closewarning(){
+        document.getElementById("warn").style.display= "none";
+    }
+   </script>
+</html>

@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #fbf9f9;
+    background-size: cover;
+    /**/
+    
+}
+.te{
+    color: #fff ;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   overflow: hidden;
+   background-image: url(./picturess/meo2.gif);
+   background-repeat: repeat;
+   background-size: 50%;
+   
+}
+#nut1,#nut4{
+    display: inline-flex;
+    margin-top: 10%;
+    background-color: powderblue;
+    height: 65px;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    user-select: none;
+    cursor: pointer;
+}
+#nut1{
+    position: relative;
+
+}
+#nut4{
+    position: absolute;
+
+}
+#nut2{
+    display: none;
+    left: 30%;
+    position: relative;
+    margin-top: 10%;
+    background-color: powderblue;
+    height: 65px;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    user-select: none;
+    cursor: pointer;
+}
+#nut3{
+    display: none;
+    right: 30%;
+    position: relative;
+    margin-top: 10%;
+    background-color: powderblue;
+    height: 65px;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50px;
+    border: 2px solid #0a0a0a;
+    user-select: none;
+    cursor: pointer;
+}
+.marg{
+    margin-top: 20px;
+}
+#maincontent{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    display: none;
+    background-color: #3e537a;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#sidecontent{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fbf9f9;
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+#modau1{
+    margin-bottom: 0px;
+    display: flex;
+    color: #0a0a0a;
+    position: absolute;
+    top: 25%;
+}
+#nutdong{
+    position: absolute;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0a0a0a;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.ten{
+    font-family: "YALBs-plo-0 0", _fb_, auto;
+    position: absolute;
+    font-size: large;
+    color: wheat;
+}
+.t1{
+    top: 10%;
+    left: 10%;
+}
+.t2{
+    bottom: 5%;
+    left: 28%;
+}
+.avatar{
+    position: absolute;
+    top: 17%;
+    left: 8%;
+}
+.anhcv{
+    height: 420px;
+    width: 352px;
+}
+.chucmung{
+    color: rgb(216, 200, 181);
+    line-height: 30px;
+    font-family: "YADK4CFnGjM 0", _fb_, auto;
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+}
+.phaohoa{
+    position: absolute;
+    top:10%;
+    left: 50%;
+
+}
+.phao{
+    width: 25%;
+    height: 25%;
+   
+}
+.meoo{
+    position: absolute;
+    bottom: 5%;
+    left: 65%;
+}
+.me{
+    width: 25%;
+    height: 25%;
+    
+}
+#warn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fcfbfb;
+    position: absolute;
+   background-image: linear-gradient(358deg, rgb(222 47 179) , rgb(229 229 224));
+}
+.vovan1{
+    position: absolute;
+   bottom: -9%;
+    width: 120%;
+    height: 55%;
+}
+.talkshit{
+    position: absolute;
+    top: 10%;
+}
+#cainut{
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #0a0a0a;
+    top: 50%;
+    height: 145px;
+    width: 145px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(139, 203, 243);
+}
+@media screen and (min-width:1000px){
+    #warn{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .avatar{
+        display: none;
+    }
+    .chucmung{
+        margin-left: 0;
+
+    }
+    .ten{
+        display: none;
+    }
+    .phaohoa{
+        
+        top:10%;
+        left: 10%;
+    
+    }
+    .phao{
+        width: 50%;
+        height: 50%;
+       
+    }
+    .me{
+        width: 50%;
+        height: 50%;
+        
+    }
+
+}
